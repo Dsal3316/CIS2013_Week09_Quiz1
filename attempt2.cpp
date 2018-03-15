@@ -17,23 +17,15 @@ int main(){
 		cout << "Somthing went wrong with info.dat." << endl;
 	}
 
-	inFromFile >> item;
-	cout << "Item 1 is " << item << endl;
-	inFromFile >> item;
-	cout << "Item 2 is " << item << endl;
-	inFromFile >> item;
-	cout << "Item 3 is " << item << endl;
-	inFromFile >> item;
-	cout << "Item 4 is " << item << endl;
-	inFromFile >> item;
-	cout << "Item 1 is " << item << endl;
-	inFromFile >> item;
-	cout << "Item 2 is " << item << endl;
-	inFromFile >> item;
-	cout << "Item 3 is " << item << endl;
-	inFromFile >> item;
-	cout << "Item 4 is " << item << endl;
-		
+	for(int i=0; i<9190; i++){
+		inFromFile >> item;
+		if(item == 'A') {As++;}
+		else if(item == 'F') {Fs++;}
+		else if(item == 'a') {as++;}
+		else if(item == 'b') {bs++;}
+
+		total++;
+	}
 		
 
 	
